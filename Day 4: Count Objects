@@ -1,0 +1,8 @@
+function getCount(objects) {
+    let count=0;
+    let equal = objects.filter(objects => objects.x === objects.y)
+    for (let i = 0; i < equal.length; i++){
+        count += 1
+    }
+    return count;
+}
