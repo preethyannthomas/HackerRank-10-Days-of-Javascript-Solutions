@@ -1,0 +1,12 @@
+function reverseString(s) {
+    try{
+          if(s.split("").reverse().join("")){
+              console.log(s.split("").reverse().join(""));
+          }  else{
+              throw s;
+          }
+    }catch(err){
+        console.log("s.split is not a function");
+        console.log(s);
+    }
+}
