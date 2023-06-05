@@ -1,0 +1,16 @@
+class Polygon{
+    constructor(arr){
+        this.l = arr[0];
+        this.b = arr[1];
+        this.h = arr[2];
+        this.w = arr[3];
+        if(arr[4]!=null){
+            this.n = arr[4];
+        }else {
+            this.n = 0;
+        }
+    }
+    perimeter = function(){
+        return this.l+this.b+this.h+this.w+this.n;
+    }
+}
