@@ -1,0 +1,13 @@
+function vowelsAndConsonants(s) {
+    let a = "";
+    let b = "";
+    let arr = ['a','e','i','o','u','A','E','I','O','U'];
+    for(let i = 0; i<s.length; i++){
+        if(arr.indexOf(s.charAt(i))!=-1){
+            a = a + s.charAt(i)+"\n";
+        }else{
+            b = b + s.charAt(i)+"\n";
+        }
+    }
+    console.log(a+b);
+}
