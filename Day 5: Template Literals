@@ -1,0 +1,8 @@
+function sides(literals, ...expressions) {
+    let p = expressions[1];
+    let a = expressions[0];
+    let s1 = (p + Math.sqrt(p*p-(16*a)))/4;
+    let s2 = (p - Math.sqrt(p*p-(16*a)))/4;
+    let arr = [s1,s2];
+    return arr.sort();
+}
