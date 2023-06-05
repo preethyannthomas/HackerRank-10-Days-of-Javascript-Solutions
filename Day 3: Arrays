@@ -1,0 +1,6 @@
+function getSecondLargest(nums) {
+    // Complete the function
+    const maxNumber = Math.max(...nums);
+    nums = nums.filter(num => num != maxNumber);   
+    return Math.max(...nums);
+}
